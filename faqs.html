@@ -18,7 +18,7 @@
  
 <div class="contact-wrapper">
     <div class="contact-info">
-      <h3>Contact Details</h3>
+      <h2> Contact Details </h2>
       <p>📧 Email: <a href="mailto:support@agriprovisionlandscape.in">support@agriprovisionlandscape.in</a></p>
       <p>📱 Phone: +91-98765-43210</p>
       <p>📍 Address: AgriProvision Landscaping, Hyderabad, Telangana.</p>
@@ -106,11 +106,18 @@
 
 
   <!-- Reset Scroll on Refresh -->
-  <script>
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    };
-  </script>
+<script>
+  window.addEventListener('load', () => {
+    // This triggers ONLY on full page reloads (not SPA nav)
+    const navEntries = performance.getEntriesByType("navigation");
+    if (navEntries.length > 0 && navEntries[0].type === "reload") {
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+      }, 0); // Delay ensures it's called after rendering
+    }
+  });
+</script>
+
 
 <div id="footer-container"></div>
 

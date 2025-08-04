@@ -305,13 +305,20 @@
 
 
 
+<script>
+  window.addEventListener('load', () => {
+    // This triggers ONLY on full page reloads (not SPA nav)
+    const navEntries = performance.getEntriesByType("navigation");
+    if (navEntries.length > 0 && navEntries[0].type === "reload") {
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+      }, 0); // Delay ensures it's called after rendering
+    }
+  });
+</script>
 
 
-    <script>
-      window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
-      };
-    </script>
+
 
     <div class="popup-img" id="popupImg">
       <img id="popupImgTag" src="" alt="Expanded View" />

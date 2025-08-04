@@ -18,7 +18,7 @@
     <section class="section">
       <h2>PROJECTS</h2>
       <h3>Here are some of the projects we took upon....</h3>
-      <div class="categories-bar">
+      <div class="categories-bar"> 
         <button>Home Gardens</button>
         <button>Corporate Offices</button>
         <button>Terrace Gardens</button>
@@ -221,12 +221,18 @@
 
 
       <!-- PAGE REFRESH -->
-      <script>
-        window.onbeforeunload = function () {
-          window.scrollTo(0, 0);
-        };
-      </script>
-    </section>
+<script>
+  window.addEventListener('load', () => {
+    // This triggers ONLY on full page reloads (not SPA nav)
+    const navEntries = performance.getEntriesByType("navigation");
+    if (navEntries.length > 0 && navEntries[0].type === "reload") {
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "auto" });
+      }, 0); // Delay ensures it's called after rendering
+    }
+  });
+</script>
+
     
 <div id="footer-container"></div>
 
