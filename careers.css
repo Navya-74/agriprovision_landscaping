@@ -1,0 +1,62 @@
+.internship-section {
+  padding: 60px 20px;
+  background-color: #f6fff3;
+  text-align: center;
+  color: #2f4f2f;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.internship-section h1 {
+      margin-top: 80px;
+      font-size: 3rem;
+      color: #2c3e50;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 4px; /* reduce this */
+      font-style: italic;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.program-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 100, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 850px;
+  text-align: left;
+}
+
+.program-box h2 {
+  color: #4a7a4a;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.program-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: black;
+}
+
+.know-more-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #5dbb63;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background-color: #489e50;
+}

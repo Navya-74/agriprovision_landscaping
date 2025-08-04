@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | AgriProvision Landscaping</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="faqs.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar loads here -->
+  <div id="header-container"></div>
+
+
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" placeholder="Phone Number (Optional)" />
+        <select name="subject" required>
+          <option value="">-- Select Subject --</option>
+          <option value="project">Project Inquiry</option>
+          <option value="internship">Internship/Training</option>
+          <option value="partnership">Partnership</option>
+          <option value="other">Other</option>
+        </select>
+        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h3>Contact Details</h3>
+      <p>📧 Email: <a href="mailto:support@agriprovisionlandscape.in">support@agriprovisionlandscape.in</a></p>
+      <p>📱 Phone: +91-98765-43210</p>
+      <p>📍 Address: AgriProvision Landscaping, Hyderabad, Telangana.</p>
+      <p>🕐 Timings: Mon - Sat | 9 AM – 6 PM</p>
+      <p>🌐 Follow us:  
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a> |
+        <a href="#">WhatsApp</a>
+      </p>
+    </div>
+  </div>
+
+  <div id="faqs" class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <h4>What services do you offer?</h4>
+    <p>We offer landscaping design, terrace gardens, lawn care, irrigation setup, and maintenance services.</p>
+  </div>
+  <div class="faq">
+    <h4>Can I request a custom garden design?</h4>
+    <p>Absolutely! We specialize in creating custom landscapes tailored to your space and preferences.</p>
+  </div>
+  <div class="faq">
+    <h4>Do you provide maintenance services after installation?</h4>
+    <p>Yes, we offer regular maintenance packages to keep your garden healthy and beautiful.</p>
+  </div>
+  <div class="faq">
+    <h4>Where is AgriProvision Landscaping based?</h4>
+    <p>We’re located in Hyderabad, Telangana, and cater to surrounding areas as well.</p>
+  </div>
+  <div class="faq">
+    <h4>How can I schedule a consultation?</h4>
+    <p>You can fill out our contact form or reach out via phone or email to schedule an appointment.</p>
+  </div>
+  <div class="faq">
+    <h4>Do you offer internship or training opportunities?</h4>
+    <p>Yes, we offer internships and hands-on training in landscaping design and management. Use the contact form to apply.</p>
+  </div>
+  <div class="faq">
+    <h4>What are your operating hours?</h4>
+    <p>We operate Monday to Saturday from 9:00 AM to 6:00 PM.</p>
+  </div>
+  <div class="faq">
+    <h4>What is the typical duration of a landscaping project?</h4>
+    <p>Depending on project size, it can range from a few days to a few weeks. We’ll provide an estimate during consultation.</p>
+  </div>
+  <div class="faq">
+    <h4>Are your services eco-friendly?</h4>
+    <p>Yes, we prioritize sustainability and use eco-friendly materials and techniques wherever possible.</p>
+  </div>
+  <div class="faq">
+    <h4>What should I prepare before a consultation?</h4>
+    <p>Have some ideas ready, your site photos, and measurements if possible. We’ll take it from there!</p>
+  </div>
+</div>
+
+
+  <!-- Load Navbar Script -->
+  <script>
+    fetch('header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+
+
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("show");
+    document.body.classList.toggle("menu-open");
+  }
+</script>
+
+
+
+
+  <!-- Reset Scroll on Refresh -->
+  <script>
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clients | AgriProvision Landscaping</title>
+  <link rel="stylesheet" href="clients.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar (load via JS or manually include) -->
+  <div id="header-container"></div>
+
+  <!-- Hero Section -->
+  <section class="clients-hero">
+    <h1>Who We’ve Grown With</h1>
+    <p> From terrace gardens to resort landscapes, we’ve had the honor of partnering with organizations that value sustainability and style. Here’s a look at the clients who’ve helped us grow — and who we’ve proudly rooted success with.</p>
+  </section>
+
+  <!-- Client Logos Section -->
+  <section class="clients-grid">
+    <div class="client-card"><img src="https://i.pinimg.com/736x/9f/93/ae/9f93ae8f39417cd575e735bf5f1b1505.jpg" alt="Client 1 Logo"></div>
+    <div class="client-card"><img src="https://i.pinimg.com/736x/6e/56/6f/6e566fc2ee93f827ef33c8a13deb1d47.jpg" alt="Client 2 Logo"></div>
+    <div class="client-card"><img src="https://i.pinimg.com/736x/f4/bc/55/f4bc551c2f7b70b46013b5e62b47065f.jpg" alt="Client 3 Logo"></div>
+    <div class="client-card"><img src="https://i.pinimg.com/736x/65/9c/70/659c7011e7848d07423bf5593d2dcfa1.jpg" alt="Client 4 Logo"></div>
+
+    <div class="client-card"><img src="https://i.pinimg.com/736x/8f/66/02/8f66027df316eabfb399b47d342208f6.jpg" alt="Client 1 Logo"></div>
+    <div class="client-card"><img src="https://i.pinimg.com/736x/5a/46/c6/5a46c64aaa900610c19fdc57de3036bb.jpg" alt="Client 2 Logo"></div>
+    <div class="client-card"><img src="https://i.pinimg.com/736x/b4/8d/ed/b48ded94bce1302d3f83d6a46e3214cc.jpg" alt="Client 3 Logo"></div>
+    <div class="client-card"><img src="https://i.pinimg.com/736x/07/8d/15/078d15aa79e90dee0a74bc5b60680fcd.jpg" alt="Client 4 Logo"></div>
+
+    <div class="client-card"><img src="https://i.pinimg.com/736x/44/f6/c4/44f6c45c05d43b9e3c03712f9a1d7584.jpg" alt="Client 1 Logo"></div>
+    <div class="client-card"><img src="https://i.pinimg.com/736x/e2/96/53/e29653301695dec10f2c06d3560fd31c.jpg" alt="Client 2 Logo"></div>
+    <div class="client-card"><img src="https://i.pinimg.com/1200x/72/6d/5e/726d5e14c57dd8bb708cf925c210eeb9.jpg" alt="Client 3 Logo"></div>
+    <div class="client-card"><img src="https://i.pinimg.com/1200x/4b/bd/be/4bbdbe1b9f5aba9a46298b0b3667228e.jpg" alt="Client 4 Logo"></div>
+    <!-- Add more client logos as needed -->
+  </section>
+
+  <!-- Testimonials (Optional) -->
+  <section class="testimonials">
+    <h2>Voices from Our Landscapes</h2>
+
+   <ul class="testimonial-list fancy">
+  <li>
+    🌿 “AgriProvision transformed our land into a green paradise.”
+    <br><strong>— GreenScape Villas</strong>
+  </li>
+  <li>
+    🌿 “Sustainable landscaping that aligns perfectly with our eco-values.”
+    <br><strong>— EcoSchool Hyderabad</strong>
+  </li>
+  <li>
+    🌿 “Their team took our vague ideas and turned them into a lush, vibrant garden space.”
+    <br><strong>— Sunrise Resort & Spa</strong>
+  </li>
+  <li>
+    🌿 “From planning to planting, every step was professional and well-communicated.”
+    <br><strong>— UrbanBloom Apartments</strong>
+  </li>
+  <li>
+    🌿 “Our visitors frequently compliment the greenery — it’s now a signature element of our campus.”
+    <br><strong>— GreenTech Solutions</strong>
+  </li>
+  <li>
+    🌿 “What impressed us the most was their attention to soil health and water efficiency.”
+    <br><strong>— AgriZen Farming Co.</strong>
+  </li>
+  <li>
+    🌿 “It’s rare to find such a blend of creativity, sustainability, and punctuality.”
+    <br><strong>— Greenroots Nursery</strong>
+  </li>
+  <li>
+    🌿 “They didn’t just landscape — they educated our staff on how to maintain the space long-term.”
+    <br><strong>— Hillview International School</strong>
+  </li>
+  <li>
+    🌿 “The seasonal planting plan keeps our front yard colorful and alive throughout the year.”
+    <br><strong>— The Leaf House, Jubilee Hills</strong>
+  </li>
+  <li>
+    🌿 “Efficient, environment-conscious, and visually stunning results — a rare trio these days.”
+    <br><strong>— Serenity Wellness Retreat</strong>
+  </li>
+</ul>
+
+
+  </section>
+
+  <!-- CTA Footer -->
+  <section class="cta-footer">
+    <p> <h3>Want to work with us? </h3></p>
+    <a href="faqs.html" class="cta-button">Get in Touch</a>
+  </section>
+
+  
+
+  <!-- SCRIPT to load navbar -->
+ <script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-container').innerHTML = data;
+    });
+</script>
+
+
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("show");
+    document.body.classList.toggle("menu-open");
+  }
+</script>
+
+
+
+
+
+ <!-- PAGE REFRESH -->
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+</script>
+</body>
+</html>

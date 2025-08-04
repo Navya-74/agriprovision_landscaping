@@ -1,0 +1,87 @@
+ .services-section {
+    background-color: #f5fef8;
+    padding: 80px 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .section-heading {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 3rem;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px; /* reduce this */
+    
+  }
+
+  /* Service Block Styling */
+  .service-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.8s ease, opacity 0.4s ease;
+    opacity: 0;
+    gap: 30px;
+  }
+
+  .service-block.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .service-block:nth-child(odd) {
+    flex-direction: row;
+    background-color: #e8f5e9;
+    transform: translateX(-100px);
+  }
+
+  .service-block:nth-child(even) {
+    flex-direction: row-reverse;
+    background-color: #d0f0c0;
+    transform: translateX(100px);
+  }
+
+  /* Image Styling */
+  .service-block img {
+    width: 40%;
+    height: 500px;
+    border-radius: 12px;
+    object-fit:cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Text Content Styling */
+  .service-content {
+    width: 50%;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
+  }
+
+  .service-content h3 {
+    font-size: 1.8rem;
+    color: #33691e;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .service-content p {
+    margin: 0;
+  }
+
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .service-block {
+      flex-direction: column !important;
+    }
+    .service-block img,
+    .service-content {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,414 @@
+.about-section {
+  padding: 120px 20px 80px;
+  background-color: #e9fbe5;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-container {
+  background-color: #d3f5cc;
+  padding: 40px;
+  border: 32px solid #b7e4b3; 
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 3rem;
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 4px; /* reduce this */
+  font-style: italic;
+  margin-top: -10px;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team-section {
+  padding: 60px 200px;
+  background-color: #f8fff5;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 4px; /* reduce this */
+  font-style: italic;
+}
+
+.team-description {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 18px;
+  color: #555;
+  
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 45px;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  opacity: 0;
+}
+
+.left-photo .team-photo {
+  order: 0;
+}
+
+.right-photo .team-photo {
+  order: 1;
+}
+
+.left-photo {
+  background-color: #e1f7e7; /* pista green-ish */
+  border-left: 7px solid #72c77b;
+}
+
+.right-photo {
+  background-color: #f0fff5; /* lighter green */
+  border-right: 7px solid #86e99f;
+}
+
+.team-photo {
+  flex: 0 0 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.team-content {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+.team-content strong {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+
+.team-member.reverse {
+  flex-direction: row-reverse;
+}
+
+.team-img img {
+  width: 220px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.team-info {
+  flex: 1;
+  max-width: 800px;
+}
+
+.team-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #2d572c;
+}
+
+.team-info h3 span {
+  display: block;
+  font-weight: 800;
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+  
+}
+
+.team-info p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.team-hidden {
+  opacity: 0;
+  transform: translateX(0); /* reset transform to avoid jump */
+}
+
+
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animation classes */
+.animate-left {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.animate-right {
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+/* Optional delay effect for a smooth staggered look */
+.team-member {
+  opacity: 0; /* default hidden, shown via JS on scroll */
+  transition: opacity 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Vision & Mission Section ===== */
+.mission-vision {
+  background-color: #e6f5e6; /* pale green background */
+  padding: 60px 20px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+
+.mission-vision h2 {
+  font-size: 3rem;
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 4px; /* reduce this */
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto 20px;
+  max-width: 900px;
+}
+
+.mv-separator {
+  border: none;
+  border-top: 4px solid #2d572c;
+  width: 15%;
+  margin: 40px auto;
+  opacity: 0.6;
+  border-radius: 50px;
+}
+
+
+
+
+/* ===== Why Choose Section ===== */
+.why-choose {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  color: #333;
+}
+
+.why-choose h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2e6f42;
+  position: relative;
+}
+
+.why-choose h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #8ccf94;
+  margin: 10px auto 20px;
+  border-radius: 5px;
+}
+
+.why-choose ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose li {
+  background-color: #f0fdf4;
+  margin: 10px auto;
+  padding: 12px 18px;
+  border-left: 6px solid #64a964;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  max-width: 600px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Core Values Section ===== */
+.core-values {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  color: #333;
+}
+
+.core-values h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2e6f42;
+  position: relative;
+}
+
+.core-values h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #8ccf94;
+  margin: 10px auto 20px;
+  border-radius: 5px;
+}
+
+.core-values p {
+  font-size: 1.02rem;
+  margin-bottom: 15px;
+}
+
+.core-values p strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #417d4f;
+  margin-top: 20px;
+}
+
+/* ===== Closing Message Section ===== */
+.closing-message {
+  background-color: #e9f7ed;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.closing-message h2 {
+  font-size: 2rem;
+  color: #2f814a;
+  margin-bottom: 20px;
+}
+
+.closing-message p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .vision-mission,
+  .why-choose,
+  .core-values,
+  .closing-message {
+    margin: 40px 15px;
+    padding: 0 10px;
+  }
+
+  .vision-mission h2,
+  .why-choose h2,
+  .core-values h2,
+  .closing-message h2 {
+    font-size: 1.6rem;
+  }
+
+  .vision-mission p,
+  .why-choose li,
+  .core-values p,
+  .closing-message p {
+    font-size: 1rem;
+  }
+}

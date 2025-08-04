@@ -1,0 +1,120 @@
+.clients-hero {
+  background-color: #e4f5e3;
+  text-align: center;
+  padding-left: 350px;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  padding-right: 350px;
+
+}
+
+.clients-hero h1{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 3rem;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px; /* reduce this */   
+}
+
+.clients-hero p{
+  margin-top: 20px;
+      font-size: 1.15rem;
+      color: #2c3e50;
+      font-family: 'Poppins', sans-serif;
+      font-style: italic;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  padding: 40px;
+  background-color: #f8fdf7;
+  padding-left: 90px;
+}
+
+.client-card img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials {
+  padding: 1rem 2rem;
+  background-color: #f5fdf7;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.testimonials .subtext {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.testimonial-list.fancy {
+  list-style: none;
+  padding-left: 0;
+}
+
+.testimonial-list.fancy li {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #4caf50;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  position: relative;
+}
+
+.testimonial-list.fancy li::before {
+  
+  position: absolute;
+  left: -1.5rem;
+  top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.testimonial-list.fancy strong {
+  display: block;
+  margin-top: 0.8rem;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+
+
+
+.cta-footer {
+  background-color: #d1e7d1;
+  text-align: center;
+  padding: 40px;
+  padding-top: 10px;
+}
+
+.cta-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+}

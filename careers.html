@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | AgriProvision Landscaping</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="careers.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Dynamic Navbar will be loaded here -->
+  <body>
+  <div id="header-container"></div>
+
+<section id="internships" class="internship-section">
+  <h1> Internships & Trainings</h1>
+  <p class="intro-text">
+    At AgriProvision, we believe in nurturing the next generation of landscape professionals by offering both <b> internship opportunities </b> and <b> structured design training programs.</b>
+  </p>
+
+  <div class="program-box">
+    <h2>🖊️ Internship Program</h2>
+    <p>
+      Our internship is tailored for <b> Horticulture and Agriculture graduates </b> who wish to gain <b> comprehensive, hands-on experience </b> in landscaping.
+      Interns are involved in  <b>on-site field execution </b> — including layout marking, planting, irrigation setup, and materials management —
+      while also receiving training in  <b>landscape designing using AutoCAD and SketchUp. </b>
+    </p>
+    <p>
+      This combination of practical and design exposure equips interns with a well-rounded foundation to enter the green industry confidently.
+    </p>
+  </div>
+
+  <div class="program-box">
+    <h2>📋 Design Training Program</h2>
+    <p>
+      Our training program is ideal for  <b>enthusiasts and beginners </b> looking to specialize in  <b>landscape design. </b>
+      The course focuses exclusively on mastering tools like  <b>AutoCAD and SketchUp, </b> enabling participants to create professional landscape drawings and 3D models.
+    </p>
+    <p>
+      This program does not include fieldwork but builds strong design skills for those interested in the creative and planning side of landscaping.
+    </p>
+  </div>
+
+  <a href="faqs.html" class="know-more-btn">👉 Know More</a>
+</section>
+
+
+
+
+  <!-- SCRIPT to load navbar -->
+ <script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-container').innerHTML = data;
+    });
+</script>
+
+
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("show");
+    document.body.classList.toggle("menu-open");
+  }
+</script>
+
+
+
+
+
+ <!-- PAGE REFRESH -->
+
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+</script>
+
+</body>
+</html>
