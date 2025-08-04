@@ -46,7 +46,7 @@
   <a href="faqs.html" class="know-more-btn">👉 Know More</a>
 </section>
 
-
+<div id="footer-container"></div>
 
 
   <!-- SCRIPT to load navbar -->
@@ -55,6 +55,12 @@
     .then(res => res.text())
     .then(data => {
       document.getElementById('header-container').innerHTML = data;
+    });
+
+    fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
     });
 </script>
 
@@ -79,6 +85,8 @@
     window.scrollTo(0, 0);
   };
 </script>
+
+
 
 </body>
 </html>

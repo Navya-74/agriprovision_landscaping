@@ -15,25 +15,8 @@
 
 
   <!-- Contact Section -->
-  <div class="contact-container">
-    <div class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="#" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <input type="tel" name="phone" placeholder="Phone Number (Optional)" />
-        <select name="subject" required>
-          <option value="">-- Select Subject --</option>
-          <option value="project">Project Inquiry</option>
-          <option value="internship">Internship/Training</option>
-          <option value="partnership">Partnership</option>
-          <option value="other">Other</option>
-        </select>
-        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-
+ 
+<div class="contact-wrapper">
     <div class="contact-info">
       <h3>Contact Details</h3>
       <p>📧 Email: <a href="mailto:support@agriprovisionlandscape.in">support@agriprovisionlandscape.in</a></p>
@@ -45,6 +28,7 @@
         <a href="#">LinkedIn</a> |
         <a href="#">WhatsApp</a>
       </p>
+    </div>
     </div>
   </div>
 
@@ -100,6 +84,12 @@
       .then(data => {
         document.getElementById('header-container').innerHTML = data;
       });
+
+      fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
   </script>
 
 
@@ -121,6 +111,9 @@
       window.scrollTo(0, 0);
     };
   </script>
+
+<div id="footer-container"></div>
+
 
 </body>
 </html>

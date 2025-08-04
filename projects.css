@@ -162,3 +162,38 @@
   color: #333;
   font-style: italic;
 }
+
+
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .project-image {
+    width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .project-description {
+    width: 90%;
+    height: auto;
+    margin: 0;
+  }
+
+  .carousel-btn {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  .carousel-btn.left {
+    left: 0.5rem;
+  }
+
+  .carousel-btn.right {
+    right: 0.5rem;
+  }
+}

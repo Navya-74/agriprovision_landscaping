@@ -28,6 +28,14 @@
     transition: transform 0.8s ease, opacity 0.4s ease;
     opacity: 0;
     gap: 30px;
+
+  
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 30px;
+    gap: 20px;
+
+
   }
 
   .service-block.show {
@@ -85,3 +93,25 @@
       width: 100%;
     }
   }
+
+  @media (max-width: 768px) {
+  .service-block {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .service-block.reverse {
+    flex-direction: column !important;
+  }
+
+  .service-block .service-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+
+  .service-block .service-text {
+    padding: 0px 15px;
+  }
+}

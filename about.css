@@ -225,6 +225,48 @@
 }
 
 
+@media (max-width: 768px) {
+  .team-section {
+    padding: 40px 20px;
+  }
+
+  .team-member {
+    flex-direction: column !important;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .team-img img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+
+  .team-info {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .team-info h3 {
+    font-size: 20px;
+  }
+
+  .team-info h3 span {
+    font-size: 14px;
+  }
+
+  .team-info p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .team-photo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 
 
 

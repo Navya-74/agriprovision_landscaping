@@ -5,6 +5,8 @@
   padding-top: 90px;
   padding-bottom: 30px;
   padding-right: 350px;
+  margin-top: 30px; 
+  
 
 }
 
@@ -20,7 +22,7 @@
 }
 
 .clients-hero p{
-  margin-top: 20px;
+      margin-top: 20px;
       font-size: 1.15rem;
       color: #2c3e50;
       font-family: 'Poppins', sans-serif;
@@ -117,4 +119,54 @@
   padding: 12px 24px;
   text-decoration: none;
   border-radius: 6px;
+}
+
+
+
+@media (max-width: 768px) {
+  .clients-hero {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .clients-hero h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .clients-hero p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .clients-grid {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    gap: 20px;
+  }
+
+  .testimonials {
+    padding: 1rem;
+  }
+
+  .testimonials h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-list.fancy li {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .cta-footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
 }

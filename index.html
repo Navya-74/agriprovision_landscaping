@@ -122,7 +122,7 @@
         <a href="about.html#satish">
           <div class="member">
             <img
-              src="https://randomuser.me/api/portraits/women/45.jpg"
+              src="https://wallpaperaccess.com/full/6528408.jpg"
               alt="Satish"
             />
             <h3>Satish Reddy Ambati</h3>
@@ -133,7 +133,7 @@
         <a href="about.html#vidhya">
         <div class="member">
           <img
-            src="https://randomuser.me/api/portraits/men/46.jpg"
+            src="https://live.staticflickr.com/5252/5403292396_0804de9bcf_n.jpg"
             alt="Vidhya"
           />
           <h3>Vidhya Sree Gaddam</h3>
@@ -144,7 +144,7 @@
         <a href="about.html#soumya">
         <div class="member">
           <img
-            src="https://randomuser.me/api/portraits/women/47.jpg"
+            src="https://tse1.mm.bing.net/th/id/OIP.bH_XAvBVtNiqD_OLp-FhUQHaFV?pid=ImgDet&w=474&h=341&rs=1&o=7&rm=3"
             alt="Soumya"
           />
           <h3>Soumya Boggula</h3>
@@ -156,7 +156,7 @@
 <a href="about.html#shaik">
         <div class="member">
           <img
-            src="https://randomuser.me/api/portraits/men/48.jpg"
+            src="https://wallpapercave.com/wp/wp11131003.jpg"
             alt="Shaik"
           />
           <h3>Shaik Mabu Subhani</h3>
@@ -167,7 +167,7 @@
 <a href="about.html#satishbabu">
         <div class="member">
           <img
-            src="https://randomuser.me/api/portraits/women/49.jpg"
+            src="https://wallpapercave.com/wp/wp11131009.jpg"
             alt="Satish Babu"
           />
           <h3>P. Satish Babu</h3>
@@ -206,9 +206,7 @@
       >
     </section>
 
-    <footer>
-      <p>&copy; 2025 AgriProvision. All rights reserved.</p>
-    </footer>
+   <div id="footer-container"></div>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
@@ -277,8 +275,16 @@
         .then((data) => {
           document.getElementById("header-container").innerHTML = data;
         })
+        
         .catch((error) => console.error("Header load error:", error));
-    </script>
+  
+  
+        fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+  </script>
 
 
 

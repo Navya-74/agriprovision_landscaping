@@ -187,12 +187,20 @@ His experience, insights, and vision are the driving force behind <b>AgriProvisi
       </p>
     </section>
 
+    <div id="footer-container"></div>
+
   <!-- SCRIPT to load navbar -->
  <script>
   fetch('header.html')
     .then(res => res.text())
     .then(data => {
       document.getElementById('header-container').innerHTML = data;
+    });
+
+    fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
     });
 </script>
 
@@ -237,6 +245,8 @@ His experience, insights, and vision are the driving force behind <b>AgriProvisi
     document.body.classList.toggle("menu-open");
   }
 </script>
+
+
 
 
 </body>

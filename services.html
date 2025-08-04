@@ -106,6 +106,12 @@
     .then(data => {
       document.getElementById('header-container').innerHTML = data;
     });
+
+    fetch('footer.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
 </script>
 
 
@@ -139,6 +145,9 @@
     document.body.classList.toggle("menu-open");
   }
 </script>
+
+
+<div id="footer-container"></div>
 
 
 </body>
