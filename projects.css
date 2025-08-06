@@ -164,6 +164,13 @@
   font-style: italic;
 }
 
+.carousel {
+  margin: 4rem 0; /* space top and bottom */
+
+}
+
+
+
 
 @media (max-width: 768px) {
   .project-container {
