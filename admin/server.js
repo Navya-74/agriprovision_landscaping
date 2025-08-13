@@ -17,13 +17,13 @@ const ALERT_EMAIL = 'navyasrimarepally74@gmail.com'; // Email to get alerts
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'navyasrimarepally4@gmail.com',        // Your Gmail
+        user: 'navyasrimarepally74@gmail.com',        // Your Gmail
         pass: 'xuvspsrrbkuxmvzf'           // App password (not normal Gmail password)
     }
 });
 
 // ---------- SITE DIRECTORY ----------
-const SITE_DIR = path.resolve('D:/landscape_site/site');
+const SITE_DIR = path.resolve('D:/landscape_site/docs');
 
 // ---------- MIDDLEWARE ----------
 app.use(bodyParser.json());
