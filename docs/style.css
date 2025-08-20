@@ -70,7 +70,7 @@ header {
 }
 
 .logo-img {
-  height: 40px;
+  height: 60px;
   width: auto;
   
 }
@@ -408,8 +408,8 @@ nav a:hover::before {
 
 .about-image img {
   width: 100%;
-  max-width: 750px; /* 💡 slightly larger */
-  height: auto;
+  max-width:900px; /* 💡 slightly larger */
+  height: 500px;
   border-radius: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* ✨ softer & deeper shadow */
   animation: fadeInLeft 1s ease forwards;
@@ -433,6 +433,7 @@ nav a:hover::before {
   font-weight: 100;
   font-style: italic;
   animation: fadeInUp 1s ease both;
+  padding-left: 50px;: ;
 }
 
 .about-text h2 {
